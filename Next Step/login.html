@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="shortcut icon" href="./images/xample.jpg" type="image/x-icon">
+    <link rel="stylesheet" href="./login.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Log in</title>
+    <script src="https://kit.fontawesome.com/76d27a89aa.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <section>
+        <form action="" method="post" enctype="multipart/form-data">
+            <div class="logo">
+                <h1>log in</h1>
+                <img src="./images/xample.jpg" alt="">
+            </div>
+            <p class="old">Don't have an account? <a href="./register.html">Sign Up here</a></p>
+
+
+            <div class="text">
+                <i class="fa-regular fa-user"></i>
+                <input type="text" placeholder="username">
+            </div>
+
+            <div class="text">
+                <i class="fa-sharp fa-solid fa-lock"></i>
+                <input type="password" placeholder="password" id="security-key">
+                <span>
+                    <img src="./images/eye-solid.svg" alt="" id="toggle" onclick="ShowHide()">
+                </span>
+            </div>
+            
+            <button class="Create">Log in</button>
+        </form>
+    </section>
+</body>
+<script src="./Next step.js"></script>
+</html>

@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="shortcut icon" href="./images/xample.jpg" type="image/x-icon">
+    <link rel="stylesheet" href="./about.css">
+    <link rel="stylesheet" href="./Next step.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>About Us</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fasthand&family=Poppins:wght@400;900&family=Roboto:wght@300;400&family=Work+Sans:wght@200&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fasthand&family=Poppins&family=Roboto:wght@300;400&family=Work+Sans:wght@200&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/76d27a89aa.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <i class="fas fa-bars" id="menu-btn" onclick="showNavbar()"></i>
+            <img src="./images/xample.jpg" alt="logo">
+        </div>
+
+        <nav class="desktopNav">
+            <ul class="myNav">
+                <li><a href="./index.html">Home</a></li>
+                <li><a href="./about.html">About</a></li>
+                <li><a href="./services.html">Services</a></li>
+                <li><a href="./blog-posts.html">Blog Posts</a></li>
+                <li><a href="./contact.html">Contact</a></li>
+            </ul>
+
+            <div class="account">
+                <a href="./login.html">Log in</a>
+                <a href="./register.html">Sign in</a>
+            </div>
+        </nav>
+
+        <!--mobile-navigation-->
+
+        <nav class="mobile-navbar" id="mobile-navbar">
+            <div class="mobile-navbar-header">
+                <i class="fas fa-times" id="close" onclick="showNavbar()"></i>
+            </div>
+            <div class="mobile-navbar-items">
+                <a href="./index.html">Home</a>
+                <a href="./about.html">About</a>
+                <a href="./services.html">Services</a>
+                <a href="./blog-posts.html">Blog Posts</a>
+                <a href="./contact.html">Contact</a>
+            </div>
+
+            <div class="account">
+                <a href="./login.html">Log in</a>
+                <a href="./register.html">Sign in</a>
+            </div>
+        </nav>
+    </header>
+
+    <div class="main-container" id="main-container">
+        <div class="who">
+            <div class="empty"></div>
+            <div class="text">
+                <h1>who we are</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores, 
+                    ex veritatis reiciendis tempore nihil aut at delectus eveniet ipsam 
+                    sit fugiat quam magni velit nesciunt maiores laudantium dolor sint fugit.</p>
+            </div>
+        </div>
+        
+
+        <div class="why">
+            <h1>Why Choose Us?</h1>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Commodi, 
+                minima? Quam nihil, ab ratione blanditiis esse veniam. 
+                Veritatis dolorum, debitis doloribus, nisi dolore sit magni id ut et architecto nemo.
+            </p>
+
+            <p>
+               Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus quos
+                nulla consectetur illo aut maxime numquam dolorem blanditiis enim ipsam 
+               tempora ad, deleniti voluptate quaerat est animi dolor nihil ducimus.
+            </p>
+        </div>
+    </div>
+
+    <footer>
+        <div class=" who-we-are">
+            <img src="./images/xample.jpg" alt="">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis quas veniam eos 
+                fugit amet dolorem, unde cum dolore facilis veritatis cupiditate quia. 
+                At reprehenderit corporis quas. Dolorem, magni! Autem, nam!</p>
+            <div></div>
+        </div>
+
+        <ul class="quick-links">
+            <h3>Quick Links</h3>
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="./about.html">About</a></li>
+            <li><a href="./services.html">Services</a></li>
+            <li><a href="./blog-posts.html">Blog Posts</a></li>
+            <li><a href="./contact.html">Contact</a></li>
+        </ul>
+
+        <address class="contact">
+            <h3>Contact Info</h3>
+            <p>Suite 19 Plaza,Opposite Fagba Market, Lagos Nigeria</p>
+            <div class="cont">
+                <div>
+                    <i class="fa-regular fa-clock"></i>
+                </div>
+                <span>
+                    <p>
+                        Opening Hours:
+                    </p>
+                    <p>
+                        8:00 AM – 5:00 PM
+                    </p>
+                </span>
+            </div>
+
+            <div class="cont">
+                <div>
+                    <i class="fa-solid fa-phone"></i>
+                </div>
+                <span>
+                    <p>
+                        Phone:
+                    </p>
+                    <p>
+                        +234 8138957283
+                    </p>
+                </span>
+            </div>
+
+            <div class="cont">
+                <div>
+                    <i class="fa-regular fa-envelope"></i></i>
+                </div>
+
+                <span>
+                    <p class="mymail">
+                        e-mail:
+                    </p>
+                    <p class="mymail">
+                        promiseokpoto5050@gmail.com
+                    </p>
+                </span>
+            </div>
+        </address>
+    </footer>
+</body>
+<script src="./Next step.js"></script>
+</html>

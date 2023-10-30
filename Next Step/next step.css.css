@@ -1,0 +1,715 @@
+:root{
+    --myBlue: #1e2e3d;
+    --boxShadow: 5px 5px 5px rgba(199, 192, 192, 0.1);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    transition: all .5s linear;
+}
+
+.mobile-navbar{
+    display: none;
+}
+
+body{
+    width: 100%;
+    height: 100%;
+    background-color: #eee;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+body h2{
+    margin-top: 200px;
+    background-color: var(--myBlue);
+    color: white;
+    width: 100%;
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header{
+    width: 100%;
+    height: 100px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #fafafa;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+}
+
+header .logo{
+    width: 20%;
+    height: 60px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+header .logo img{
+    width: 25%;
+    height: 60px;
+    border-radius: 50%;
+}
+
+header .logo #menu-btn{
+    color: var(--myBlue);
+    font-size: 30px;
+    display: none;
+}
+
+
+header .desktopNav{
+    width: 60%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+header .desktopNav .myNav{
+    width: 60%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+header .desktopNav .myNav li{
+    list-style: none;
+}
+
+
+
+header .desktopNav .myNav li a{
+    color: var(--myBlue);
+    font-size: 17px;
+    text-decoration: none;
+    padding: 5px;
+    position: relative;
+
+}
+
+header .desktopNav .myNav li a::after{
+    content: "";
+    width: 0;
+    height: 3px;
+    position: absolute;
+    bottom: -10px;
+    left: 0;
+    background-color: var(--myBlue);
+    transition: all .3s;
+}
+
+header .desktopNav .myNav li a:hover::after{
+    width: 100%;
+}
+
+header .desktopNav .myNav li a.current{
+    color: white;
+    background-color: var(--myBlue);
+}
+
+
+
+header .desktopNav .account{
+    width: 30%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+header .desktopNav .account a{
+    background-color: transparent;
+    color: var(--myBlue);
+    font-size: 17px;
+    text-decoration: none;
+    padding: 7px;
+    border-radius: 3px;
+    border: solid 1px var(--myBlue);
+}
+
+header .desktopNav .account a:hover{
+    color: white;
+    background-color: var(--myBlue);
+}
+
+
+
+.hero-section{
+    width: 80vw;
+    height: 70vh;
+    margin-top: 150px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background: url(./images/hero-1.jpg);
+    border-radius: 10px;
+}
+
+.hero-section .hero-wrapper{
+    width: 80%;
+    height: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+    align-items: center;
+    background-color: rgb(63, 63, 209);
+    border-radius: 10px;
+}
+
+.hero-section .hero-wrapper h1{
+    color: white;
+    font-size: 40px;
+    text-transform: capitalize;
+}
+
+.hero-section .hero-wrapper p{
+    color: white;
+    font-size: 20px;
+    text-align: center;
+    padding: 0 20px 0 20px;
+}
+
+.hero-section .hero-wrapper a{
+    color: white;
+    background-color: var(--myBlue);
+    font-size: 15px;
+    width: 200px;
+    height: 60px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+}
+
+.hero-section .hero-wrapper a:hover{
+    background-color: lightblue;
+    border: 3px solid var(--myBlue);
+    color: var(--myBlue);
+}
+
+.recent-posts{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 80vw;
+    height: 450px;
+    margin-top: 150px;
+}
+
+.recent-posts .post{
+    width: 27%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    background-color: #fafafa;
+    padding: 0 10px 5px 10px;
+    border-radius: 10px;
+    box-shadow: var(--boxShadow);
+}
+
+.recent-posts .post .post-photo{
+    width: 100%;
+    height: 30%;
+    border-radius: 10px;
+}
+
+.recent-posts .post .author{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    width: 70%;
+    height: 60px;
+    gap: 10px;
+}
+
+.recent-posts .post .Dp{
+    width: 25%;
+    height: 80%;
+    border-radius: 50%;
+}
+
+.recent-posts .post h3{
+    color: white;
+    font-size: 18px;
+    width: 100%;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    font-weight: 900;
+    text-transform: capitalize;
+    background-color: var(--myBlue);
+}
+
+.recent-posts .post p{
+    color: var(--myBlue);
+    font-size: 17px;
+    padding-bottom: 10px;
+}
+
+
+
+.recent-posts .post a{
+    color: white;
+    background-color: var(--myBlue);
+    font-size: 12px;
+    width: 100px;
+    height: 40px;
+    border-radius: 5px;
+    padding: 0 5px 0 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.recent-posts .post a:hover{
+    background-color: lightblue;
+    border: 3px solid var(--myBlue);
+    color: var(--myBlue);
+}
+
+
+
+footer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    height: 400px;
+    background-color: var(--myBlue);
+    color: white;
+    font-size: 17px;
+    margin-top: 150px;
+}
+
+footer img{
+    width: 200px;
+    height: 90px;
+    border-radius: 10px;
+}
+
+footer .who-we-are{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 25%;
+    gap: 30px;
+    margin-top: 50px;
+}
+
+footer .quick-links{
+    display: flex;
+    flex-direction: column;
+    height: 70%;
+    width: 25%;
+    gap: 20px;
+    list-style: none;
+}
+
+footer .quick-links h3{
+    color: var(--myBlue);
+    background-color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    height: 40px;
+    width: 50%;
+    padding-left: 5px;
+}
+
+footer .quick-links li a{
+    color: white;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+footer .quick-links li a:hover{
+    color: var(--myBlue);
+    background-color: white;
+    width: 25%;
+    padding: 3px;
+    border-radius: 5px;
+}
+
+
+footer .contact{
+    width: 25%;
+    gap: 20px;
+    display: flex;
+    flex-direction: column;
+    height: 400px;
+    margin-top: 50px;
+}
+
+footer .contact .cont{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    align-items: center;
+    height: 60px;
+}
+
+footer .contact .cont span{
+    display: flex;
+    flex-direction: column;
+}
+
+footer .contact .cont span .mymail{
+    text-transform: none;
+}
+
+
+@media (max-width: 500px){
+
+    html{
+        overflow-x: hidden;
+        scroll-behavior: smooth;
+    }
+
+    body{
+        overflow: hidden;
+        width: 100%;
+        height: 100%;
+    }
+
+    header{
+        width: 100%;
+        background-color: #fafafa;
+    }
+
+    header .logo #menu-btn{
+        display: block;
+        cursor: pointer;
+        font-size: 30px;
+    }
+
+
+    header .desktopNav, .account{
+        display: none;
+    }
+
+    header .logo{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        height: 100%;
+        padding: 0 30px 0 30px;
+    }
+    
+    header .logo img{
+        width: 60px;
+        height: 60px;
+        margin-left: 50px;
+    }
+
+
+    header .mobile-navbar{
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        gap: 50px;
+        top: 0;
+        left: 0;
+        width: 70vw;
+        height: 100vh;
+        background-color: #fafafa;
+        box-shadow: var(--boxShadow);
+    }
+
+    header .mobile-navbar .mobile-navbar-items{
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    header .mobile-navbar .mobile-navbar-items a{
+       width: 100%;
+       background-color: var(--myBlue);
+       color: white;
+       height: 40px;
+       font-size: 17px;
+       text-decoration: none;
+       display: flex;
+       align-items: center;
+       padding-left: 10px;
+    }
+
+    header .mobile-navbar .account{
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    header .mobile-navbar .account a{
+        width: 50%;
+       background-color: var(--myBlue);
+       color: white;
+       height: 40px;
+       font-size: 17px;
+       text-decoration: none;
+       display: flex;
+       align-items: center;
+       padding-left: 10px;
+       border-radius: 5px;
+    }
+
+    header .mobile-navbar #close{
+        position: absolute;
+        left: 90%;
+        top: 10px;
+        cursor: pointer;
+    }
+
+
+
+    .hero-section{
+        width: 80vw;
+        height: 450px;
+        margin-top: 50px;
+    }
+    
+    .hero-section .hero-wrapper{
+        width: 80%;
+        height: 70%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 20px;
+        align-items: center;
+        background-color: rgb(63, 63, 209);
+        border-radius: 10px;
+    }
+    
+    .hero-section .hero-wrapper h1{
+        color: white;
+        font-size: 20px;
+        text-transform: capitalize;
+    }
+    
+    .hero-section .hero-wrapper p{
+        color: white;
+        font-size: 17px;
+        text-align: center;
+        padding: 0 20px 0 20px;
+    }
+    
+    .hero-section .hero-wrapper a{
+        color: white;
+        background-color: var(--myBlue);
+        font-size: 15px;
+        width: 45%;
+        height: 50px;
+        border-radius: 5px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-decoration: none;
+    }
+    
+    .hero-section .hero-wrapper a:hover{
+        background-color: lightblue;
+        border: 3px solid var(--myBlue);
+        color: var(--myBlue);
+    }
+
+
+
+    .recent-posts{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 90%;
+        height: 100%;
+        margin-top: 150px;
+        gap: 50px;
+    }
+    
+    .recent-posts .post{
+        width: 100%;
+        height: 550px;
+        display: flex;
+        flex-direction: column;
+        background-color: #fafafa;
+        padding: 0 10px 5px 10px;
+        border-radius: 10px;
+        box-shadow: var(--boxShadow);
+    }
+    
+    .recent-posts .post .post-photo{
+        width: 100%;
+        height: 35%;
+        border-radius: 10px;
+    }
+    
+    .recent-posts .post .author{
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: center;
+        width: 70%;
+        height: 60px;
+        gap: 10px;
+    }
+    
+    .recent-posts .post .Dp{
+        width: 25%;
+        height: 80%;
+        border-radius: 50%;
+    }
+    
+    .recent-posts .post h3{
+        color: white;
+        font-size: 18px;
+        width: 100%;
+        height: 30px;
+        display: flex;
+        align-items: center;
+        font-weight: 900;
+        text-transform: capitalize;
+        background-color: var(--myBlue);
+    }
+    
+    .recent-posts .post p{
+        color: var(--myBlue);
+        font-size: 17px;
+        padding-bottom: 10px;
+    }
+    
+    
+    
+    .recent-posts .post a{
+        color: white;
+        background-color: var(--myBlue);
+        font-size: 12px;
+        width: 100px;
+        height: 40px;
+        border-radius: 5px;
+        padding: 0 5px 0 5px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-decoration: none;
+        text-transform: uppercase;
+    }
+    
+    .recent-posts .post a:hover{
+        background-color: lightblue;
+        border: 3px solid var(--myBlue);
+        color: var(--myBlue);
+    }
+
+
+
+
+    footer{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        height: 100%;
+        background-color: var(--myBlue);
+        color: white;
+        font-size: 17px;
+        margin-top: 150px;
+    }
+    
+    footer img{
+        width: 100px;
+        height: 90px;
+    }
+    
+    footer .who-we-are{
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        width: 90%;
+        gap: 30px;
+        margin-top: 50px;
+    }
+    
+    footer .quick-links{
+        display: flex;
+        flex-direction: column;
+        height: 70%;
+        width: 90%;
+        gap: 20px;
+        list-style: none;
+    }
+    
+    footer .quick-links h3{
+        color: var(--myBlue);
+        background-color: white;
+        width: 40%;
+        border-radius: 5px;
+    }
+    
+    footer .quick-links li a{
+        color: white;
+        text-decoration: none;
+        font-size: 17px;
+    }
+    
+    footer .quick-links li a:hover{
+        color: var(--myBlue);
+        background-color: white;
+        width: 25%;
+        padding: 3px;
+        border-radius: 5px;
+    }
+    
+    
+    footer .contact{
+        width: 90%;
+        gap: 20px;
+        display: flex;
+        flex-direction: column;
+        height: 400px;
+        margin-top: 50px;
+    }
+    
+    footer .contact .cont{
+        display: flex;
+        flex-direction: row;
+        gap: 10px;
+        align-items: center;
+        height: 60px;
+    }
+    
+    footer .contact .cont span{
+        display: flex;
+        flex-direction: column;
+    }
+    
+    footer .contact .cont span .mymail{
+        text-transform: none;
+    }
+
+}
